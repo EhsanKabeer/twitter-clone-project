@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microblogging Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Microblogging Platform</h1>
+      <p>Share your thoughts in 280 characters or less</p>
+    </header>
+    <main>
+      <section id="compose">
+        <h2>Compose a new post</h2>
+        <form id="post-form">
+          <input
+            type="text"
+            id="author"
+            placeholder="Your name"
+            required
+          />
+          <textarea
+            id="content"
+            maxlength="280"
+            placeholder="What's happening?"
+            required
+          ></textarea>
+          <button type="submit">Post</button>
+        </form>
+      </section>
+      <section id="timeline">
+        <h2>Timeline</h2>
+        <ul id="post-list"></ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
